@@ -16,6 +16,11 @@ const config = {
   organizationName: "fenprace", // Usually your GitHub org/user name.
   projectName: "void-docs-zh-hans", // Usually your repo name.
 
+  i18n: {
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
+  },
+
   presets: [
     [
       "classic",
@@ -24,9 +29,7 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // editUrl:
-          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/fenprace/void-docs-zh-hans/tree/master/",
         },
         blog: false,
         theme: {
@@ -39,6 +42,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: "Void Linux 中文手册",
         logo: {
@@ -46,6 +52,17 @@ const config = {
           src: "logo.svg",
         },
         items: [
+          {
+            type: "doc",
+            position: "left",
+            docId: "about/index",
+            label: "文档",
+          },
+          // {
+          //   to: "status",
+          //   label: "翻译进度",
+          //   position: "left",
+          // },
           {
             href: "https://github.com/fenprace/void-docs-zh-hans/issues",
             label: "Issuses",
@@ -61,15 +78,6 @@ const config = {
       footer: {
         style: "light",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
           {
             title: "Void Linux",
             items: [
@@ -88,20 +96,20 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "更多",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Issues",
+                href: "https://github.com/fenprace/void-docs-zh-hans/issues",
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/fenprace/void-docs-zh-hans",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} FENPRACE. Built with Docusaurus.`,
+        copyright: `本站点不是 Void Linux 的官方站点。<br />Copyright © ${new Date().getFullYear()} FENPRACE. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

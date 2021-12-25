@@ -3,7 +3,7 @@ import { string } from "prop-types";
 import React from "react";
 
 export const Man = ({ to }) => {
-  const [name, section] = to.split("/");
+  const [name, section = 1] = to.split("/");
 
   return (
     <Link

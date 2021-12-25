@@ -5,7 +5,23 @@ title: 关于
 
 import { Man } from "@site/src/components/Man";
 
-欢迎阅读 Void 手册！为了高效地利用本文档，请阅读[《关于本手册》](./about-this-handbook.md)。安装 `void-docs` 软件包，可以用 <Man to="void-docs/1" /> 工具，以多种格式、在本地阅读本文档。
+:::caution
+
+本站点正在建设中，翻译可能存在疏漏、错误，您可以[帮助我们](https://github.com/fenprace/void-docs-zh-hans/issues)。
+
+:::
+
+:::info
+
+本文档是[《Void Handbook》](https://docs.voidlinux.org/)的中文翻译。原文以 [CC-BY-SA-4.0](https://github.com/void-linux/void-docs/blob/master/LICENSE) 许可证发布。
+
+- 本文档最后修改日期为：2021-12-26。
+- 原文最后更新的日期是：[2021-10-06](https://github.com/void-linux/void-docs/releases/tag/2021.10.06)。
+- 原文可能存在更新，如果您发现已翻译内容有所滞后，您可以[提醒我们](https://github.com/fenprace/void-docs-zh-hans/issues)。
+
+:::
+
+欢迎阅读 Void 手册！为了高效地利用本文档，请阅读[《关于本手册》](./about-this-handbook.mdx)。安装 `void-docs` 软件包，可以用 <Man to="void-docs/1" /> 工具，以多种格式、在本地阅读本文档。
 
 Void 是一个独立的，[滚动更新](https://en.wikipedia.org/wiki/Rolling_release)的 Linux 发行版。Void 全从头开发，并不是哪个发型版的 fork。Void 重视稳定性甚于追求[最新潮](https://en.wikipedia.org/wiki/Bleeding_edge_technology)的技术。除此之外，Void 还有这些与众不同的特点：
 
