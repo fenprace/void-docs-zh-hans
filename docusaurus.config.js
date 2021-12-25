@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Void Linux 中文手册",
   tagline: "Void Linux 中文手册",
-  url: "https://fenprace.github.io/void-docs-zh-hans",
+  url: "https://void-docs.zhuof.engineer",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
