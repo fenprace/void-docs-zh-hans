@@ -2,6 +2,8 @@
 title: 安装
 ---
 
+import { Man } from "@site/src/components/Man";
+
 本章包括安装 Void 的一般流程。对于特殊的流程，参考[《进阶安装》](#)一节。
 
 ## 基础系统要求
@@ -34,7 +36,7 @@ Void 不支持 i386、i486 或 i586 架构。
 
 ### 验证镜像完整性
 
-你可以用 [sha256sum(1)](https://man.voidlinux.org/sha256sum.1) 和上述的 `sha256sum.txt` 文件验证下载文件的完整性。下面的命令会检查你已下载镜像的完整性：
+你可以用 <Man to="sha256sum/1" /> 和上述的 `sha256sum.txt` 文件验证下载文件的完整性。下面的命令会检查你已下载镜像的完整性：
 
 ```
 $ sha256sum -c --ignore-missing sha256sum.txt
@@ -48,4 +50,4 @@ void-live-x86_64-musl-20170220.iso: OK
 强烈建议在使用镜像前，先验证镜像的签名，确保镜像文件没有被篡改。
 
 每个镜像
-如果你已经在使用 Void 系统，你可以从 `void-release-keys` 软件包获取密钥，XBPS。你还需要 signify(1) 或 minisign(1) 的拷贝
+如果你已经在使用 Void 系统，你可以从 `void-release-keys` 软件包获取密钥，XBPS。你还需要 <Man to="signify/1" /> 或 <Man to="minisign/1" /> 的拷贝。
