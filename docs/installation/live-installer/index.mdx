@@ -1,0 +1,131 @@
+---
+title: Live 安装器
+---
+
+Void 提供的 live 安装器镜像包括一组基础工具、安装器程序和安装新 Void 系统需要的软件包。Live 镜像可以用来修复无法引导或正常运行的系统。
+
+`glibc` 和 `musl` 都有 `x86_64` 镜像，但只有 `glibc` 支持 `i686` 架构。Live 安装器不支持其他架构，其他架构的用户需要用 rootfs 压缩包安装，或者手动安装。
+
+## 安装器镜像
+
+Void 发布两种镜像：基础镜像和“风格化”镜像，推荐 Linux 新手尝试功能更完善的风格化镜像。高手们往往会倾向于用基础镜像安装系统，只安装他们需要的软件包。
+
+### 基础镜像
+
+基础镜像提供了能用来安装 Void 系统的，最小化的软件包集合。这些基础软件包仅够用来配置新机器、升级系统和从仓库里安装其他软件包。
+
+### 风格化镜像
+
+每一种 Void “风格化” 镜像都包括了完整的桌面系统、网络浏览器和对应环境的基本应用。它们与基础镜像的区别只是安装了额外的软件包和服务。
+
+风格化镜像的安装过程与基础镜像基本一致，除了你 **必须** 在安装时选择 `Local` 源。如果你选择了 `Network`，安装器会下载并安装最新版本的基础系统，而不安装 live 镜像中携带的额外软件包。
+
+#### 比较风格化镜像
+
+这里是对比每种风格包含的主要组件和应用的概览：
+
+export const nowrap = { style: { whiteSpace: "nowrap" } };
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Enlightenment</th>
+      <th>Cinnamon</th>
+      <th>LXDE</th>
+      <th>LXQT</th>
+      <th>MATE</th>
+      <th>XFCE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td {...nowrap}>窗口管理器</td>
+      <td>Enlightenment Window Manager</td>
+      <td>Mutter (Muffin)</td>
+      <td>Openbox</td>
+      <td>Openbox</td>
+      <td>Metacity (Marco)</td>
+      <td>xfwm4</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>文件管理器</td>
+      <td>Enlightenment File Manager</td>
+      <td>Nemo</td>
+      <td>PCManFM</td>
+      <td>PCManFM-Qt</td>
+      <td>Caja</td>
+      <td>Thunar</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>网页浏览器</td>
+      <td>Firefox ESR</td>
+      <td>Firefox ESR</td>
+      <td>Firefox ESR</td>
+      <td>QupZilla</td>
+      <td>Firefox ESR</td>
+      <td>Firefox ESR</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>终端</td>
+      <td>Terminology</td>
+      <td>gnome-terminal</td>
+      <td>LXTerminal</td>
+      <td>QTerminal</td>
+      <td>MATE terminal</td>
+      <td>xfce4-Terminal</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>文档查看器</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Atril (PS/PDF)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>纯文本查看器</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Pluma</td>
+      <td>Mousepad</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>图片查看器</td>
+      <td>-</td>
+      <td>-</td>
+      <td>GPicView</td>
+      <td>LXImage</td>
+      <td>Eye of MATE</td>
+      <td>Ristretto</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>解压缩软件</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Engrampa</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td {...nowrap}>其他</td>
+      <td>Mixer, EConnMan (connection manager), Elementary Test</td>
+      <td>-</td>
+      <td>LXTask (task manager), MIME type editor</td>
+      <td>Screen grabber</td>
+      <td>
+        Screen grabber, file finder, MATE color picker, MATE font viewer, Disk
+        usage analyzer, Power statistics, System monitor (task manager),
+        Dictionary, Log file viewer
+      </td>
+      <td>
+        Bulk rename, Orage Globaltime, Orage Calendar, Task Manager, Parole
+        Media Player, Audio Mixer, MIME type editor, Application finder
+      </td>
+    </tr>
+  </tbody>
+</table>
