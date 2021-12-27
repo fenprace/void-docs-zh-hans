@@ -4,6 +4,7 @@ import React from "react";
 export const Progress = ({ values, colors }) => {
   return (
     <div
+      className="shadow--tl"
       style={{
         display: "flex",
         width: "100%",
