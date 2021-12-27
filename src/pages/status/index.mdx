@@ -1,0 +1,109 @@
+---
+title: 翻译进度
+---
+
+import styles from "./styles.module.css";
+import { Progress } from "@site/src/components/Progress";
+
+export const Done = () => {
+  return <span className={`badge badge--success ${styles.badge}`}>已完成</span>;
+};
+
+export const InProgress = () => {
+  return <span className={`badge badge--warning ${styles.badge}`}>进行中</span>;
+};
+
+export const TBD = () => {
+  return (
+    <span className={`badge badge--secondary ${styles.badge}`}>待翻译</span>
+  );
+};
+
+# 翻译进度
+
+## 概览
+
+《Void Handbook》全文共 5 章，78 节，已完成 1 章，6 节。
+
+<Progress values={[6, 1, 71]} />
+
+## 章节
+
+- About <Done />
+  - History <Done />
+  - About This Handbook <Done />
+  - InfraDocs <Done />
+- Installation <Done />
+  - Live Installers <Done />
+    - Prepare Installation Media <InProgress />
+    - Partitioning Notes <TBD />
+    - Installation Guide <TBD />
+  - Advanced Installation Guides <TBD />
+    - Installation via chroot (x86/x86_64/aarch64) <TBD />
+    - Full Disk Encryption <TBD />
+    - ARM Devices <TBD />
+      - Supported Platforms <TBD />
+  - musl <TBD />
+- Configuration <TBD />
+  - Package Documentation <TBD />
+    - Manual Pages <TBD />
+  - Firmware <TBD />
+  - Locales and Translations <TBD />
+  - Users and Groups <TBD />
+  - Services and Daemons - runit <TBD />
+    - Per-User Services <TBD />
+    - Logging <TBD />
+  - rc.conf, rc.local and rc.shutdown <TBD />
+  - Cron <TBD />
+  - Solid State Drives <TBD />
+  - Security <TBD />
+    - AppArmor <TBD />
+  - Date and Time <TBD />
+  - Kernel <TBD />
+  - Power Management <TBD />
+  - Network <TBD />
+    - Firewalls <TBD />
+    - wpa_supplicant <TBD />
+    - IWD <TBD />
+    - NetworkManager <TBD />
+    - ConnMan <TBD />
+  - Network Filesystems <TBD />
+  - Session and Seat Management <TBD />
+  - Graphical Session <TBD />
+    - Graphics Drivers <TBD />
+      - AMD or ATI <TBD />
+      - Intel <TBD />
+      - NVIDIA <TBD />
+      - NVIDIA Optimus <TBD />
+    - Xorg <TBD />
+    - Wayland <TBD />
+    - Fonts <TBD />
+    - Icons <TBD />
+    - GNOME <TBD />
+    - KDE <TBD />
+  - Multimedia <TBD />
+    - ALSA <TBD />
+    - PipeWire <TBD />
+    - PulseAudio <TBD />
+    - sndio <TBD />
+  - Bluetooth <TBD />
+  - TeX Live <TBD />
+  - External Applications <TBD />
+  - Printing <TBD />
+  - Containers and Virtual Machines <TBD />
+    - libvirt <TBD />
+    - LXC <TBD />
+- XBPS Package Manager <TBD />
+  - Advanced Usage <TBD />
+  - Repositories <TBD />
+    - Mirrors <TBD />
+      - Changing Mirrors <TBD />
+      - Using Tor Mirrors <TBD />
+    - Restricted Packages <TBD />
+    - Custom Repositories <TBD />
+    - Signing Repositories <TBD />
+  - Troubleshooting XBPS <TBD />
+    - Common Issues <TBD />
+    - Static XBPS <TBD />
+- Contributing <TBD />
+  - Contributing To void-docs <TBD />

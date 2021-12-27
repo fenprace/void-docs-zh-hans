@@ -58,11 +58,11 @@ const config = {
             docId: "about/index",
             label: "文档",
           },
-          // {
-          //   to: "status",
-          //   label: "翻译进度",
-          //   position: "left",
-          // },
+          {
+            to: "status",
+            label: "翻译进度",
+            position: "left",
+          },
           {
             href: "https://github.com/fenprace/void-docs-zh-hans/issues",
             label: "Issuses",
