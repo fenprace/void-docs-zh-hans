@@ -21,7 +21,7 @@ import { Man } from "@site/src/components/Man";
 
 :::
 
-欢迎阅读 Void 手册！为了高效地利用本文档，请阅读[《关于本手册》](./02-about-this-handbook.mdx)。安装 `void-docs` 软件包，可以用 <Man to="void-docs/1" /> 工具，以多种格式、在本地阅读本文档。
+欢迎阅读 Void 手册！为了高效地利用本文档，请阅读[《关于本手册》](./about-this-handbook.mdx)。安装 `void-docs` 软件包，可以用 <Man to="void-docs/1" /> 工具，以多种格式、在本地阅读本文档。
 
 Void 是一个独立的，[滚动更新](https://en.wikipedia.org/wiki/Rolling_release)的 Linux 发行版。Void 全从头开发，并不是哪个发型版的 fork。Void 重视稳定性甚于追求[最新潮](https://en.wikipedia.org/wiki/Bleeding_edge_technology)的技术。除此之外，Void 还有这些与众不同的特点：
 
