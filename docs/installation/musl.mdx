@@ -3,8 +3,37 @@ sidebar_position: 3
 title: musl
 ---
 
-## 不兼容软件
+import { Man } from "@site/src/components/Man";
+
+[musl](https://musl.libc.org/) 是一个致力于轻量、快速、简单、准确的 libc 实现。
+
+Void 官方支持 musl，所有目标平台（除了 i686 的二进制包）都有使用 musl 的版本。另外，所有官方仓库中的兼容软件包不但有 glibc 的版本，还有 musl 链接的二进制文件。
+
+目前，我们提供 musl 的 nonfree 和 debug 子仓库，但不提供 multilib 子仓库。
+
+## 不兼容的软件
+
+musl 对标准的兼容克制而有限，许多常用的平台特定的扩展都没有实现，因此，许多软件需要修改才能编译或正常运行。Void 开发者们会为这些软件打增强可移植性 / 正确性的补丁，希望这些补丁能被软件上游接受。
+
+专有软件往往只支持 glibc 系统，部分专有软件可以通过 [flatpak](https://docs.voidlinux.org/config/external-applications.html#flatpak) 在 musl 系统上运行。具体而言，[NVIDIA 的私有驱动](https://docs.voidlinux.org/config/graphical-session/graphics-drivers/nvidia.html#nvidia-proprietary-driver)不支持 musl，评估硬件兼容性时应该考虑到这一点。
 
 ### glibc chroot
 
+要求 glibc 的软件可以在 glibc chroot 中运行。
+
+创建一个包含 chroot 的目录，通过 `base-voidstrap` 安装基础系统。如果需要网络链接，拷贝 `/etc/resolv.conf` 到 chroot 中；可能也需要拷贝 `/etc/hosts`。
+
+需要挂载一些目录，如下：
+
+```
+# mount -t proc none <chroot_dir>/proc
+# mount -t sysfs none <chroot_dir>/sys
+# mount --rbind /dev <chroot_dir>/dev
+# mount --rbind /run <chroot_dir>/run
+```
+
+用 <Man to="chroot/1" /> 进入新的根目录，然后照常运行 glibc 程序，用完之后请用 <Man to="umount/8" /> 卸载 chroot。
+
 ### PRoot
+
+另一种方法是用 <Man to="proot/1" />，一个 chroot、mount --bind、binfmt_misc 的用户空间实现。安装 `proot` 软件包，可以允许非特权用户使用 chroot 环境。

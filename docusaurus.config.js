@@ -109,7 +109,11 @@ const config = {
             ],
           },
         ],
-        copyright: `本站点不是 Void Linux 的官方站点。<br />Copyright © ${new Date().getFullYear()} FENPRACE. Built with Docusaurus.`,
+        copyright: `
+        本网站不是 Void Linux 的官方项目。<br />
+        本网站采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。<br />
+        Copyright © ${new Date().getFullYear()} FENPRACE.
+        Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
