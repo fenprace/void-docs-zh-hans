@@ -1,0 +1,392 @@
+[
+  {
+    "depth": 0,
+    "status": 2,
+    "title": "About"
+  },
+  {
+    "depth": 1,
+    "status": 2,
+    "title": "History"
+  },
+  {
+    "depth": 1,
+    "status": 2,
+    "title": "About This Handbook"
+  },
+  {
+    "depth": 1,
+    "status": 2,
+    "title": "InfraDocs"
+  },
+  {
+    "depth": 0,
+    "status": 2,
+    "title": "Installation"
+  },
+  {
+    "depth": 1,
+    "status": 2,
+    "title": "Live Installers"
+  },
+  {
+    "depth": 2,
+    "status": 2,
+    "title": "Prepare Installation Media"
+  },
+  {
+    "depth": 2,
+    "status": 2,
+    "title": "Partitioning Notes"
+  },
+  {
+    "depth": 2,
+    "status": 2,
+    "title": "Installation Guide"
+  },
+  {
+    "depth": 1,
+    "status": 2,
+    "title": "Advanced Installation Guides"
+  },
+  {
+    "depth": 2,
+    "status": 2,
+    "title": "Installation via chroot (x86/x86_64/aarch64)"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Full Disk Encryption"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "ARM Devices"
+  },
+  {
+    "depth": 3,
+    "status": 0,
+    "title": "Supported Platforms"
+  },
+  {
+    "depth": 1,
+    "status": 2,
+    "title": "musl"
+  },
+  {
+    "depth": 0,
+    "status": 2,
+    "title": "Configuration"
+  },
+  {
+    "depth": 1,
+    "status": 1,
+    "title": "Package Documentation"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Manual Pages"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Firmware"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Locales and Translations"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Users and Groups"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Services and Daemons - runit"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Per-User Services"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Logging"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "rc.conf, rc.local and rc.shutdown"
+  },
+  {
+    "depth": 1,
+    "status": 2,
+    "title": "Cron"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Solid State Drives"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Security"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "AppArmor"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Date and Time"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Kernel"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Power Management"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Network"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Firewalls"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "wpa_supplicant"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "IWD"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "NetworkManager"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "ConnMan"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Network Filesystems"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Session and Seat Management"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Graphical Session"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Graphics Drivers"
+  },
+  {
+    "depth": 3,
+    "status": 0,
+    "title": "AMD or ATI"
+  },
+  {
+    "depth": 3,
+    "status": 0,
+    "title": "Intel"
+  },
+  {
+    "depth": 3,
+    "status": 0,
+    "title": "NVIDIA"
+  },
+  {
+    "depth": 3,
+    "status": 0,
+    "title": "NVIDIA Optimus"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Xorg"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Wayland"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Fonts"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Icons"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "GNOME"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "KDE"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Multimedia"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "ALSA"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "PipeWire"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "PulseAudio"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "sndio"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Bluetooth"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "TeX Live"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "External Applications"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Printing"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Containers and Virtual Machines"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "libvirt"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "LXC"
+  },
+  {
+    "depth": 0,
+    "status": 0,
+    "title": "XBPS Package Manager"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Advanced Usage"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Repositories"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Mirrors"
+  },
+  {
+    "depth": 3,
+    "status": 0,
+    "title": "Changing Mirrors"
+  },
+  {
+    "depth": 3,
+    "status": 0,
+    "title": "Using Tor Mirrors"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Restricted Packages"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Custom Repositories"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Signing Repositories"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Troubleshooting XBPS"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Common Issues"
+  },
+  {
+    "depth": 2,
+    "status": 0,
+    "title": "Static XBPS"
+  },
+  {
+    "depth": 0,
+    "status": 0,
+    "title": "Contributing"
+  },
+  {
+    "depth": 1,
+    "status": 0,
+    "title": "Contributing To void-docs"
+  }
+]

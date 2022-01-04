@@ -17,6 +17,7 @@ export const Progress = ({ values, colors }) => {
       {values.map((value, id) => {
         return (
           <div
+            key={id}
             style={{
               flex: `${value} 0 0`,
               background: colors[id],
