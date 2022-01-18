@@ -86,7 +86,7 @@
   },
   {
     "depth": 2,
-    "status": 1,
+    "status": 2,
     "title": "Manual Pages"
   },
   {
@@ -96,7 +96,7 @@
   },
   {
     "depth": 1,
-    "status": 0,
+    "status": 1,
     "title": "Locales and Translations"
   },
   {
