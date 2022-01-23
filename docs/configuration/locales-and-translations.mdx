@@ -1,0 +1,22 @@
+---
+sidebar_position: 3
+title: 区域与翻译
+---
+
+要查看当前系统启用的区域，执行：
+
+```
+$ locales -a
+```
+
+## 启用区域
+
+要启用某个区域，在 `etc/default/libc-locales` 中，反注释或者增加对应的行，然后[强制重新配置](#) `glibc-locales` 软件包。
+
+## 设置系统区域
+
+在 `/etc/locale.conf` 中设置 `LANG=xxxx`。
+
+## 应用程序区域
+
+有些程序与翻译在分散的软件包中。你可以在包仓库中[搜索](#)想要的语言（比如“german”或者“portuguese”）然后安装对应应用程序的软件包。例子之一是从 LibreOffice 套件中安装独立的软件包如 `libreoffice-writer` 时，需要再安装至少一个 `libreoffice-i18n-*` 软件包。安装 `libreoffice` 元软件包时不必如此，因为元软件包已经包含了常用翻译的软件包。

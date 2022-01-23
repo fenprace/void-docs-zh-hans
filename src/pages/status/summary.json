@@ -91,12 +91,12 @@
   },
   {
     "depth": 1,
-    "status": 0,
+    "status": 1,
     "title": "Firmware"
   },
   {
     "depth": 1,
-    "status": 1,
+    "status": 2,
     "title": "Locales and Translations"
   },
   {
